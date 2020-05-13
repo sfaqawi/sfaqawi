@@ -1,0 +1,196 @@
+html {
+	width: 100%;
+	height: 100%;
+
+	
+}
+
+header, footer {
+	background-color: #e91e63;
+	height: 60px;
+}
+
+#logo {
+	
+	float: left;
+	width: 50px;
+	height: 50px;
+	padding-top: 5px;
+}
+
+h5 {
+	color: #FFFFFF;
+	padding-top: 10px
+
+}
+
+h1,h2,h3 {
+	color: white;
+	
+	text-shadow: 3px 3px 2px #8F8B8B;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+#searchbox {
+	width: 400px;
+	border-color: white;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+
+.nav_ul {
+	display: flex;
+	flex-direction: row;
+	padding-top: 10px;
+	width: 100%;
+	
+}
+
+h4 {
+	color: white;
+}
+
+li {
+	display: flex;
+	
+	padding-right: 20px;
+}
+
+li:hover {
+	text-decoration: underline;
+	font-size: 1.1em;
+}
+
+a {
+	color:#FFFFFF;
+}
+
+.intro {
+	background: url(img/bg-body.jpg) no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
+	background-color: #E7E4E4;
+
+}
+
+.container {
+
+}
+
+.body_left {
+
+	height: 600px;
+}
+
+.buffer {
+	height: 40px;
+}
+
+
+.signup_bar {
+	background-color: #e91e63;
+	width: 100%;
+	height: 60px;
+	margin-left: 0px;
+
+}
+
+.sign_up {
+	
+	color: #757575;
+	background-color: white;
+	padding: 0px 5px 3px 5px;
+
+}
+
+a:hover{
+	color:black;
+}
+
+.services_title {
+	color: #757575;
+	text-shadow: none;
+}
+
+.service1, .service2, .service3 {
+	height:500px;
+	width:300px;
+	margin-top: 30px;
+	margin-right: 40px;
+	
+	background-color: white;
+	
+}
+
+.service1_title1 {
+	background-color: #00BCD4;
+	height: 100px;
+}
+
+.service2_title1 {
+	background-color: #03A9F4;
+	height: 100px;
+}
+
+.service3_title1 {
+	background-color: #0288D1;
+	height: 100px;
+}
+
+div >h3 {
+	text-shadow: none;
+}
+
+div >img {
+	width:100px;
+	max-height: 100px;
+	margin-top: 10px;
+
+}
+
+article {
+	padding: 10px;
+	text-align: center;
+}
+
+.btn-primary {
+	background-color: #e91e63;
+	border-color: #e91e63;
+	margin-top: 30px;
+}
+
+.btn-primary:hover {
+	background-color: #e91e63;
+	border-color: #8F8B8B;
+	transform: scale(1.1);
+}
+
+.container2 {
+	width:100%;
+	height: 400px;
+	background-color: #607D8B;
+}
+
+#containter2_img {
+	width:300px;
+	height: 300px;
+}
+
+#h4testimony {
+	max-width: 1100px;
+}
+
+h6 {
+	color: white;
+	font-style: italic;
+
+}
+
