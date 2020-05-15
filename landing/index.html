@@ -7,39 +7,52 @@
 
  <!--bootstap CSS-->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
- 
+ <!--Animate.css-->
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
  <!--OWN CSS-->
  <link rel="stylesheet" type="text/css" href="style.css">
  <title>Landing Page!</title>
 
 </head>
-	<header class="row" d-flex flex-wrap>
-		<div class="col-md-4 d-flex align-items-center">
-			<img id="logo" src="img/logo.png">
-			<h5> Test Landing Page</h5>
-		</div>
-		<div class="col-md-4 d-flex align-items-center">
-			<input type="text" id="searchbox" name="searchbox" placeholder="Search">
-		</div>
-		<div class="navlimks col-md-4 d-flex align-items-center justify-content-center">
-			<ul class="nav_ul">
-				<a href="test.html"><li>Home</li></a>
-				<a href="test.html"><li>Page1</li></a>
-				<a href="test.html"><li>Page2</li></a>
-				<a href="test.html"><li>page3</li></a>
 
-			</ul>
+	<nav class="row navbar sticky-top navbar-expand-lg navbar-dark">
+		
+
+		<img class="navbar-brand" id="logo" src="img/logo.png">
+			<h5> Test Landing Page</h5>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    	<span class="navbar-toggler-icon"></span>
+   			 </button>
+   		
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			
+			<div class="col-md-6">
+				<form class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+					<input class="form-control mr-sm-2" type="search" id="searchbox" name="searchbox" placeholder="Search" aria-label="Search">
+
+				</form>
+			</div>
+			<div class="col-md-6">
+			
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="test.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="test.html">Services</a></li>
+					<li class="nav-item"><a class="nav-link" href="test.html">Pricing</a></li>
+					<li class="nav-item"><a class="nav-link" href="test.html">Contact us</a></li>
+				</ul>
+			</div>
 		</div>
 			
 		
-	</header>
+	</nav>
+
 <body>
 	<div class="row intro">
 	   	<div class="col-12 body_left d-flex flex-column justify-content-center align-items-center">
-	   		<h1>Welcome...</h1>
+	   		<h1 class="animate__animated animate__bounce">Welcome...</h1>
 	   		<div id="buffer"></div>
-	   		<p><h2>My Second Landing Page, wait to improve...</h2></p>
+	   		<p><h2 class="animate__animated animate__pulse">My Second Landing Page, wait to improve...</h2></p>
 
 	   	</div>
 
@@ -49,7 +62,7 @@
 	   
    
 
-	   <div class="signup_bar d-flex align-items-center justify-content-center">
+	   <div class="row signup_bar d-flex align-items-center justify-content-center">
 	   		<h4>Sign up to our monthly newsletter <span ><a class="sign_up" href="">Sign Up</a></span></h4>
 	   </div>
 	   <div class="container container1">
@@ -96,12 +109,12 @@
 	   			<div class="buffer col-12"></div>
 	   		</div>
 	   </div>
-	   <div class="row">
-	   		<div class="container2 d-flex flex-row justify-content-center align-items-center">
-	   			<section class="col-md-4 d-flex justify-content-center align-items-center">
+	   <div class="row d-flex align-content-stretch">
+	   		<div class="container2 col-sm-12 d-flex flex-row justify-content-center align-items-center flex-wrap">
+	   			<section class="col-sm-4 d-flex justify-content-center align-items-center">
 	   				<img id="containter2_img" src="https://learn.guidestar.org/hubfs/CANDID/Illustrations/update-Seals-page-illustration.png">
 	   			</section>
-	   			<div class="col-md-8 testimony">
+	   			<div class="col-sm-8 testimony">
 	   				<h2>We do love to hear from you!</h2>
 	   				<div class="buffer"></div>
 	   				<p><h4 id="h4testimony">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -119,5 +132,11 @@
 <footer class="row d-flex align-items-center justify-content-center">
 		<h5>Copyrights, LandingTest 2020</h5>		
 		
-	</footer>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 </html>
