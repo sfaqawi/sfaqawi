@@ -1,0 +1,321 @@
+body {
+	width:100%;
+	height: 100%;
+}
+
+h3 {
+	color:#212529;
+}
+
+/* HEADER */
+.main-header {
+	background: url(https://mdbootstrap.com/img/Photos/Others/images/77.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.header-text{
+	color: white;
+	text-align: center;
+}
+
+.buffer {
+	height: 40px;
+}
+
+.button {
+	background-color: rgba(0,0,0,0.2);
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
+	padding: 15px 50px;
+	color: white;
+	font-size: 16px;
+}
+
+.button:hover {
+	color: white;
+	text-decoration: none;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.20),0 5px 10px 0 rgba(0,0,0,0.16);
+}
+
+
+/* NAV */
+.main-nav {
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.20),0 5px 10px 0 rgba(0,0,0,0.16);
+	position: fixed;
+	z-index: 1;
+	width:100%;
+}
+
+
+
+li {
+	padding: 10px;
+	color:white;
+}
+
+.nav-social {
+	display: flex;
+	justify-content: end;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding-left: 5px;
+   
+}
+
+.navbar-light .navbar-brand:hover{ 
+
+  color: #FFFFFF;
+ }
+
+.navbar-light .navbar-brand {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover{
+	color: white;
+	font-size: 1.1em;
+}
+
+@media only screen and (max-width: 992px) {
+	.nav-social {
+		justify-content: start;
+	}
+}
+
+@media only screen and (max-width: 555px) {
+	.main-nav {
+		background-color: black;
+	}
+	.navbar-toggler {
+		background-color: white;
+
+	}
+	div{
+		padding:10px;
+	}
+	
+}
+
+
+/* DOWNLOAD SECTION */
+.download-section {
+	display: grid;
+	gap:20px;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+}
+
+hr {
+	width:100%;
+	border:  1px solid rgba(0,0,0,.1);
+}
+
+.download-section-img {
+	width: 100%;
+	height: 80%;
+	box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+
+.button-d {
+	background-color: #616161;
+	color: white;
+	width:40px;
+	text-transform: uppercase;
+	padding:5px 20px;
+	font-size: 0.7rem;
+}
+
+.button-d:hover {
+	color: white;
+	text-decoration: none;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+/* ABOUT SECTION */
+.about-section {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: 100px 50% 50%;
+	grid-template-rows: repeat(3, auto);
+}
+
+.youtube-video-about {
+	grid-column-start: 3;
+	grid-row: 1/4;
+	height:350px;
+	width:350px;
+
+	
+}
+
+.icons-about {
+	justify-self: center;
+}
+
+.img-icon {
+	width: 110px;
+	height: 80px;
+}
+
+.fa-4x{
+	color: #AE5587;
+}
+
+.ico-css-grid {
+	color: #2D8D75;
+}
+
+p {
+	color: #999;
+}
+
+.video {
+	
+	width:400px;
+	height: 350px;
+	
+}
+
+@media screen and (max-width: 1184px) {
+  	.about-section {
+	  	grid-template-columns: 100px 50%;
+	  	grid-template-rows: repeat(4, auto);
+	  	justify-content: center;
+	  }
+
+  .youtube-video-about {
+	    grid-column-start: 1;
+/*	    grid-column: span 2;*/
+	    grid-row-start: 4;
+	}
+   	.video {
+
+		position: relative;
+		width:600px;
+		height: 350px;
+		z-index: 0;
+	}
+}
+
+@media screen and (max-width: 820px) {
+  .about-section {
+  	grid-template-columns: 100px 50%;
+  	grid-template-rows: repeat(4, auto);
+  	justify-content: center;
+  }
+
+  .youtube-video-about {
+	    grid-column-start: 1;
+	    grid-row-start: 4;
+
+   	}
+
+   	.video {
+
+		position: relative;
+		width:350px;
+		height: 350px;
+		z-index: 0;
+	}
+}
+
+/* MORE FEATURES */
+.more-features {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: -1;
+}
+
+
+.indigo-text {
+	color: #AE5587;
+}
+
+.row-space {
+	margin-top: 20px;
+}
+
+.img-screens {
+	
+	height: 100%;
+	max-width: 100%;
+}
+
+/* Even More */
+
+.even-more {
+	display: grid;
+	
+	grid-row-gap:20px;
+	grid-template-columns: minmax(88px,auto);
+	grid-template-rows: auto;
+}
+
+@media screen and (min-width: 777px) {
+  .even-more {
+    grid-template-columns: repeat(4, 60px 1fr);
+   	grid-row-gap: 20px;
+  }
+  body {
+	width:100%;
+	height: 100%;
+}
+
+}
+
+.fas {
+	margin-left: 0px;
+}
+.icon {
+	padding-left: 0px;
+}
+.indigo-text-even-more {
+	color: #3F3590;
+}
+
+
+
+/* FOOTER */
+footer {
+	text-align: center;
+	background-color: black;
+}
+
+@media  screen and (max-width: 730px){
+	.button{
+		display: block;
+		margin: 5px 20px 10px 20px;
+	}
+}
+.footer-buttons {
+	height: auto;
+}
+
+.footer-social-icons {
+	color: white;
+	padding: 10px;
+}
+
+.btn-main {
+	margin-left: 20px;
+}
